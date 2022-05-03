@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/greentransparent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Media -->
+        <ImageView
+            android:id="@+id/ImgKarya"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            tools:src="@tools:sample/avatars"
+            android:scaleType="centerCrop"
+            android:contentDescription="Image of a card"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title, secondary and supporting text -->
+            <TextView
+                android:id="@+id/NamaKarya"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Nama karya Seni"
+                android:textColor="@color/primary"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                />
+            <TextView
+                android:id="@+id/DeksripsiKarya"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:text="Deksripsi Karya Seni"
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:textColor="@color/primary"
+                />
+            <TextView
+                android:id="@+id/NamaPelukis"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:text="Nama Pelukis"
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:textColor="@color/primary"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

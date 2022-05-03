@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="415dp"
+    android:layout_height="120dp"
+    android:padding="16dp"
+    app:cardBackgroundColor="@color/greentransparent"
+    style="?attr/materialCardViewFilledStyle"
+    android:id="@+id/card">
+
+    <LinearLayout
+        android:layout_width="415dp"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/NamaKarya1"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Nama Lukisan"
+            android:textColor="@color/primary"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/NamaPelukis1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Nama Pelukis"
+            android:textColor="@color/primary"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/greentransparent">
+
+            <ImageView
+                android:id="@+id/ImgKarya1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_launcher_background" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
